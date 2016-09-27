@@ -1,0 +1,30 @@
+package prueba;
+//6.Pedir dos números y mostrarlos de mayor a menor
+import java.util.Scanner;
+
+public class Ejercicio6 {
+
+	public static void main(String[] args) {
+	//Creamos el objeto Scanner
+		Scanner teclado= new Scanner(System.in);
+		//Definimos las variables
+			int num1;
+			int num2;
+			
+			//Pedimos el primer número
+			
+			//Insertamos el segundo número por consola
+			
+			//Pedimos el segundo número
+			
+			//Insertamos el segundo número por consola
+			
+			//Comprobamos si num1 es mayor a num2
+			
+			//Si num1 es mayor
+			//Mostramos num1 primero 
+			
+				//si no, lo mostramos en segunda posición
+	}
+
+}
