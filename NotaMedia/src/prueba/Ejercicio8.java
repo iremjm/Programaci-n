@@ -17,7 +17,7 @@ public class Ejercicio8 {
 		if(numero<0 || numero>9999){
 			//Si se cumple if mostramos un mensaje de ERROR
 				System.out.println("ERROR!!! Ha insertado el **"+ numero +"** Inserte un número entre 0 y 9999.");
-				//Volvemos a meter el número por teclado
+				//Volvemos a meter el n�mero por teclado
 				numero=teclado.nextInt();
 				}
 	
