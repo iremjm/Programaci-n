@@ -15,6 +15,7 @@ public class Ejerciccio10 {
 		System.out.println("Por favor ingrese la nota");
 		//Ingresamos la nota por teclado
 		nota = teclado.nextInt();
+		if(nota>=0 && nota<=10){
 			//Procesamos los datos
 			switch (nota){
 			
@@ -32,15 +33,18 @@ public class Ejerciccio10 {
 				break;
 				default:calificacion="Insuficiente";
 			}//switch
-				//Si la nota es igual o mayor a 5
-				if (nota >= 5){
-					System.out.println("El alumno ha sacado un " + calificacion + " por lo que es apto.");
-				}//if
-				//Sino
-				else{
-					System.out.println("El alumno ha sacado un " + calificacion + " por lo que no es apto.");
-				}
-				
+					//Si la nota es igual o mayor a 5
+					if (nota >= 5){
+						System.out.println("El alumno ha sacado un " + calificacion + " por lo que es apto.");
+					}//if
+					//Sino
+					else{
+						System.out.println("El alumno ha sacado un " + calificacion + " por lo que no es apto.");
+					}
+		}//if		
+		else {
+			System.out.println("Por favor ingrese una nota real, de 0 a 10");
+		}
 			
 	}//main
 
