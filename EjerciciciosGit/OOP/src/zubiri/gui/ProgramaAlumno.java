@@ -9,21 +9,26 @@ public class ProgramaAlumno {
 		//iniciar scanner
 		Scanner teclado= new Scanner(System.in);
 		//Crear alumno
-		Alumno alum1=new Alumno();
-		//
+		Alumno alumno=new Alumno();
+		String nombre;
+		String asignatura;
+		double nota;
+		//Pedir los datos al ususario por consola
+		//Alumno
 		System.out.print("Alumno: ");
 		String nomAlum=teclado.nextLine();		
-		alum1.setNombre(nomAlum);
-		//
+		//Asignatura
 		System.out.print("Asignatura: ");
 		String asigAlum=teclado.nextLine();
-		alum1.setAsignatura(asigAlum);
-		//
+		//nota
 		System.out.print("Nota: ");
 		double notaAlum=teclado.nextDouble();
-		alum1.setNota(notaAlum);
-		//
-		System.out.println(alum1.getNombre()+" en "+alum1.getAsignatura()+" tienes un "+alum1.getCalificacion());;
+		//Asignarle los datos introducidos al alumno
+			alumno.setNombre(nomAlum);
+			alumno.setAsignatura(asigAlum);
+			alumno.setNota(notaAlum);
+		//Mostrar resultado
+System.out.println(alumno.getNombre()+" en "+alumno.getAsignatura()+" tienes un "+alumno.getCalificacion());
 			}
 
 }
