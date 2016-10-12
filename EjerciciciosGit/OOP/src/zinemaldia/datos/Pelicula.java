@@ -5,7 +5,7 @@ public class Pelicula {
 	private String titulo;
 	private String director;
 	private int duracion;
-	boolean visto;
+	boolean vista;
 		//Metodos
 		//Metodo constructor
 	
@@ -27,7 +27,7 @@ public class Pelicula {
 		public void setDirector(String director) {
 			this.director = director;
 		}	
-		//Películas duración
+		//Pelï¿½culas duraciï¿½n
 			public int getDuracion() {
 			return duracion;
 		}
@@ -35,11 +35,11 @@ public class Pelicula {
 			this.duracion = duracion;
 		}
 		//Peliculas vista
-			public boolean isVisto() {
-				return visto;
+			public boolean isVista() {
+				return vista;
 			}
-			public void setVisto(boolean visto) {
-				this.visto = visto;
+			public void setVisto(boolean vista) {
+				this.visto = vista;
 			}
 	
 			
