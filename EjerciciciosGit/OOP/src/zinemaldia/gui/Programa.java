@@ -7,11 +7,14 @@ public class Programa {
 	public static void main(String[] args) {
 			Scanner teclado= new Scanner(System.in);
 			//Crear Película
-			Pelicula peli=new Pelicula("Mascotas");
+			Pelicula peli=new Pelicula("");
 			String titulo;
 			String director;
 			int duracion;
-			boolean vista;
+			String vista;
+			String msg="";
+			
+			
 				//Pedir datos por consola
 				//título
 					System.out.println("Titulo: ");
@@ -24,15 +27,29 @@ public class Programa {
 					duracion=teclado.nextInt();
 				//vista
 					System.out.println("Vista: ");
-					vista=teclado.hasNext();
-				//Asignamos datos introducidos a pelicula
+					teclado.nextLine();
+					vista=teclado.nextLine();
+					if(vista.toLowerCase().equals("si")){
+						peli.setVisto(true);
+					}else{
+						peli.setVisto(false);
+					}
+					
+					//Asignamos datos introducidos a pelicula
 					peli.setTitulo(titulo);
 					peli.setDirector(director);
 					peli.setDuracion(duracion);
-					peli.setVisto(vista);
-					
+					/////
+					if (peli.isVisto()==true){
+						msg="Si ha sido vista";
+					}
+					else{
+						msg="No ha sido vista";
+					}
 				//Mostramos
-				System.out.println("La película" + peli.getTitulo() + "es del director" + peli.director. );
+				System.out.println("La película " + peli.getTitulo() + "es del director " 
+				+ peli.getDirector() + "y tiene una duración de " + peli.getDuracion() +" minutos "+ 
+				" ¿Ha sido vista ?" + msg );
 	}
 
 }

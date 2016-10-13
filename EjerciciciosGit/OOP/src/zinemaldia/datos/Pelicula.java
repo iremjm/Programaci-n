@@ -41,7 +41,8 @@ public class Pelicula {
 			public void setVisto(boolean visto) {
 				this.visto = visto;
 			}
-	
+			
+		
 			
 		
 			
