@@ -30,9 +30,9 @@ public class Programa {
 					teclado.nextLine();
 					vista=teclado.nextLine();
 					if(vista.toLowerCase().equals("si")){
-						peli.setVisto(true);
+						peli.setVista(true);
 					}else{
-						peli.setVisto(false);
+						peli.setVista(false);
 					}
 					
 					//Asignamos datos introducidos a pelicula
@@ -40,7 +40,7 @@ public class Programa {
 					peli.setDirector(director);
 					peli.setDuracion(duracion);
 					/////
-					if (peli.isVisto()==true){
+					if (peli.isVista()==true){
 						msg="Si ha sido vista";
 					}
 					else{
@@ -49,7 +49,7 @@ public class Programa {
 				//Mostramos
 				System.out.println("La película " + peli.getTitulo() + "es del director " 
 				+ peli.getDirector() + "y tiene una duración de " + peli.getDuracion() +" minutos "+ 
-				" ¿Ha sido vista ?" + msg );
+				"¿Ha sido vista ?" + msg );
 	}
 
 }

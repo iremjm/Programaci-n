@@ -5,20 +5,25 @@ public class Pelicula {
 	private String titulo;
 	private String director;
 	private int duracion;
-	boolean vista;
+	private boolean vista;
 		//Metodos
 		//Metodo constructor
 	
-		public Pelicula(String string) {
-		// TODO Auto-generated constructor stub
-	}
+		public Pelicula() {
+			titulo="";
+		}
+		public Pelicula(String titulo){
+			this.titulo=titulo;
+			}
+		public Pelicula(String titulo, String director, int duracion, boolean visto){
+		}
 	//Metodos getter and setter
 			//Peliculas titulo
 	public String getTitulo() {
 		return titulo;
 	}
 	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+		this.titulo = titulo.substring(1,10);//solo coge un número de carácteres
 	}
 		//Peliculas director
 		public String getDirector() {
@@ -38,8 +43,8 @@ public class Pelicula {
 			public boolean isVista() {
 				return vista;
 			}
-			public void setVisto(boolean vista) {
-				this.visto = vista;
+			public void setVista(boolean vista) {
+				this.vista = vista;
 			}
 			
 		
