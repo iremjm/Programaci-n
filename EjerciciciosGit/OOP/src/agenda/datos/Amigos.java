@@ -7,7 +7,13 @@ public class Amigos {
 		private String nombre ="";
 		private String email = "";
 		private int telefono =0;
-		
+		//Metodo constructor
+		public Amigos(String nombre){
+			this.setNombre(nombre);
+		}
+		public Amigos(String nombre,String email,int telefono){		
+		}
+		//Metodos getter y setter
 		//nombre
 		public String getNombre() {
 			return nombre;
